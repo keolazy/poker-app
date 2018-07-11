@@ -21,18 +21,8 @@ class App extends Component {
     ]
   };
 
-  onEventResize = (type, { event, start, end, allDay }) => {
-    this.setState(state => {
-      state.events[0].start = start;
-      state.events[0].end = end;
-      return { events: state.events };
-    });
-  };
 
-  onEventDrop = ({ event, start, end, allDay }) => {
-    console.log(start);
-  };
-
+  // Implement Navigation Routing. 
   render() {
     return (
       <div className="App">
@@ -43,15 +33,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, Add Components appropriately to <code>src/App.js</code> and save to reload.
         </p>
-        <DnDCalendar
-          defaultDate={new Date()}
-          defaultView="month"
-          events={this.state.events}
-          onEventDrop={this.onEventDrop}
-          onEventResize={this.onEventResize}
-          resizable
-          style={{ height: "100vh" }}
-        />
+      <CalendarComponent />
       </div>
     );
   }
