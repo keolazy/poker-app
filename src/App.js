@@ -3,13 +3,11 @@ import React, { Component } from 'react';
 // React-Big-Calendar stuff.
 
 import './App.css';
+import logo from './poker-icon.png';
 // import "react-big-calendar/lib/addsons/dragAndDrop/styles.css";
 // import "react-big-calendar/lib/css/react-big-calendar.css";
-import logo from './poker-icon.png';
-
-Calendar.setLocalizer(BigCalendar.momentLocalizer(moment))
-
-const DnDCalendar = withDragAndDrop(Calendar);
+// Calendar.setLocalizer(BigCalendar.momentLocalizer(moment))
+// const DnDCalendar = withDragAndDrop(Calendar);
 
 
 class App extends Component {
@@ -40,7 +38,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Poker-App</h1>
         </header>
         <p className="App-intro">
           To get started, Add Components appropriately to <code>src/App.js</code> and save to reload.
