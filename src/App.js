@@ -1,11 +1,9 @@
-// Stock Imports
 import React from 'react';
 import './App.css';
 import logo from './poker-icon.png';
 import Lander from './components/Lander'
 import CalendarComponent from './components/CalendarComponent';
 import "react-big-calendar/lib/css/react-big-calendar.css";
-// Where do I put the routing?
 import {BrowserRouter} from 'react-router-dom';
 
 // Implement Navigation Routing. 
@@ -18,7 +16,7 @@ class App extends React.Component {
           <h1 className="App-title">Poker-App</h1>
         </header>
         <div className="tempBox">
-          <h6>Navbar Component Here - Home - Login - Signup - Locations - Contact Us</h6>
+          <h6>Home - Login - Signup - Locations - Contact Us</h6>
         </div>
         <div className="App-lander">
           <Lander />

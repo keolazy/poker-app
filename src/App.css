@@ -24,17 +24,17 @@
 
 .tempBox {
   border: #222;
-  border-style: dashed;
+  border-style: solid;
 }
 
-.App-lander {
+/* .App-lander {
   background-color: rgb(170, 167, 167);
   height: 180px;
   padding: 20px;
   color: white;
   border: #222;
   border-style: solid;
-}
+} */
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

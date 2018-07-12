@@ -1,3 +1,4 @@
+// Lobby refers to component that displays: Current Players Seated. WaitList. Tables Open.
 import React, { Component } from 'react'
 
 class Lobby extends Component {

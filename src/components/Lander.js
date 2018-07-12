@@ -3,11 +3,11 @@ import React from "react"
 
 class Lander extends React.Component {
   render() {
-    let landerImage = "../src/lander/png"
+    let landerImage = "/Users/keolazy/Desktop/poker-app/src/lander.png"
     return (
       <div className="jumbotron">
-        <h1>Lander Goes Here</h1>
-        <img src={landerImage} alt="landerPicture" />
+        <h1>Lander Component</h1>
+        <img href={landerImage} alt="landerPicture" />
       </div>
     )
   }
