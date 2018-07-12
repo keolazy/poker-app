@@ -22,6 +22,11 @@
   font-size: large;
 }
 
+.tempBox {
+  border: #222;
+  border-style: dashed;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
