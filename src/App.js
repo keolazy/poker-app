@@ -2,7 +2,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import logo from './poker-icon.png';
-import Jumbotron from './components/Jumbotron'
+// import Jumbotron from './components/Jumbotron'
+import CalendarComponent from './components/CalendarComponent';
+import "react-big-calendar/lib/css/react-big-calendar.css";
 
 
 
@@ -20,7 +22,6 @@ class App extends React.Component {
         </p>
         <div className="tempBox">
           <h1>Jumbotron goes here.</h1>
-          <Jumbotron image={this.props.image} />
         </div>
         <div className="row">
           <div className="tempBox">
@@ -37,6 +38,7 @@ class App extends React.Component {
             </div>
           </div>
         </div>
+        <CalendarComponent />
     </div>
     );
   }
