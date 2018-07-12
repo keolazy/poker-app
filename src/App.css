@@ -9,7 +9,7 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 180px;
   padding: 20px;
   color: white;
 }
@@ -25,6 +25,15 @@
 .tempBox {
   border: #222;
   border-style: dashed;
+}
+
+.App-lander {
+  background-color: rgb(170, 167, 167);
+  height: 180px;
+  padding: 20px;
+  color: white;
+  border: #222;
+  border-style: solid;
 }
 
 @keyframes App-logo-spin {
