@@ -6,7 +6,8 @@
     "react": "^16.4.1",
     "react-big-calendar": "^0.19.2",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "webpack": "^4.16.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,6 +16,6 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "webpack": "^4.15.1"
+    "babel-eslint": "^8.2.5"
   }
 }
