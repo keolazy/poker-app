@@ -19,23 +19,25 @@ class App extends React.Component {
           Add Components appropriately to <code>src/App.js</code> and save to reload.
         </p>
         <div className="tempBox">
-           <h1>Jumbotron goes here.</h1>
+          <h1>Jumbotron goes here.</h1>
           <Jumbotron image={this.props.image} />
         </div>
-        <div className="tempBox">
-           <h1>Calendar Component goes here.</h1>
+        <div className="row">
+          <div className="tempBox">
+            <h1>Calendar Component goes here.</h1>
+          </div>
         </div>
-        <div className="tempBox">
+        <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-xs-6">
               <h1>User-Card Profile Component goes here.</h1>
             </div>
-            <div className="col-md-6">
+            <div className="col-xs-6">
               <h1>Other Dashboard Component goes here.</h1>
             </div>
           </div>
         </div>
-      </div>
+    </div>
     );
   }
 }
