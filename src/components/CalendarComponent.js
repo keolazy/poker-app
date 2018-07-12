@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import Calendar from "react-big-calendar";
 import moment from "moment";
 
-
-
 Calendar.setLocalizer(Calendar.momentLocalizer(moment));
 
 class CalendarComponent extends Component {

@@ -23,11 +23,7 @@ class App extends React.Component {
         <div className="tempBox">
           <h1>Jumbotron goes here.</h1>
         </div>
-        <div className="row">
-          <div className="tempBox">
-            <h1>Calendar Component goes here.</h1>
-          </div>
-        </div>
+        <CalendarComponent />
         <div className="container">
           <div className="row">
             <div className="col-xs-6">
@@ -38,7 +34,6 @@ class App extends React.Component {
             </div>
           </div>
         </div>
-        <CalendarComponent />
     </div>
     );
   }
