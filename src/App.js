@@ -4,6 +4,7 @@ import logo from './poker-icon.png';
 import Lander from './components/Lander'
 import CalendarComponent from './components/CalendarComponent';
 import Navigation from './components/Navigation';
+import UserSignup from './components/UserSignup';
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import {BrowserRouter} from 'react-router-dom';
 
@@ -17,10 +18,11 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Poker-App</h1>
         </header>
-      <Navigation />
+        <Navigation />
         <div className="App-lander">
           <Lander />
         </div>
+        <UserSignup />
         <CalendarComponent />
         <div className="container">
           <div className="row">

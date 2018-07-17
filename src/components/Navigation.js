@@ -4,28 +4,15 @@ import React from "react";
 class Navigation extends React.Component {
   render() {
     return (
-      <div class="uk-position-relative">
+      <div className="uk-position-relative">
           <img src="../docs/images/light.jpg" alt=""></img>
-          <div class="uk-position-top">
-              <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-                  <div class="uk-navbar-left">
-                      <ul class="uk-navbar-nav">
-                          <li class="uk-active"><a href="#">Active</a></li>
+          <div className="uk-position-top">
+              <nav className="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                  <div className="uk-navbar-left">
+                      <ul className="uk-navbar-nav">
+                          <li className="uk-active"><a href="#">Active</a></li>
                           <li><a href="#">Item</a></li>
-                          <li>
-                              <a href="#">Parent</a>
-                              <div class="uk-navbar-dropdown">
-                                  <ul class="uk-nav uk-navbar-dropdown-nav">
-                                      <li class="uk-active"><a href="#">Active</a></li>
-                                      <li><a href="#">Home</a></li>
-                                      <li class="uk-nav-header">Header</li>
-                                      <li><a href="#">Item</a></li>
-                                      <li><a href="#">Item</a></li>
-                                      <li class="uk-nav-divider"></li>
-                                      <li><a href="#">Item</a></li>
-                                  </ul>
-                              </div>
-                          </li>
+                          <li><a href="#">Parent</a></li>
                       </ul>
                   </div>
               </nav>

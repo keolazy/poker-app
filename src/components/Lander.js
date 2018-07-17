@@ -3,7 +3,7 @@ import React from "react"
 
 class Lander extends React.Component {
   render() {
-    let landerImage = "../src/24hours.jpg"
+    let landerImage = "/Users/keolazy/Desktop/poker-app/src/24hours.jpg"
     return (
       <div className="jumbotron">
         <h1>Lander Component</h1>
