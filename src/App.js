@@ -6,7 +6,7 @@ import CalendarComponent from './components/CalendarComponent';
 import Navigation from './components/Navigation';
 import UserSignup from './components/UserSignup';
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import {BrowserRouter} from 'react-router-dom';
+// import {BrowserRouter} from 'react-router-dom';
 
 
 // Implement Navigation Routing. 
@@ -23,17 +23,6 @@ class App extends React.Component {
           <Lander />
         </div>
         <UserSignup />
-        <CalendarComponent />
-        <div className="container">
-          <div className="row">
-            <div className="col-xs-6">
-              <h1>Profile Modal Component</h1>
-            </div>
-            <div className="col-xs-6">
-              <h1>Activity Component</h1>
-            </div>
-          </div>
-        </div>
     </div>
     );
   }

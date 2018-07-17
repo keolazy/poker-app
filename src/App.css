@@ -28,6 +28,10 @@
   border-style: solid;
 }
 
+.jumbotron {
+  height: 75vh;
+}
+
 /* .App-lander {
   background-color: rgb(170, 167, 167);
   height: 180px;

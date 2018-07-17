@@ -18,10 +18,6 @@ class UserSignup extends React.Component {
     console.log('this.state', this.state)
     // Using ES6 to declare two variables from this.state object. 
     const { email, password } = this.state;
-    // firebaseApp.auth().createUserWithEmailAndPassword(email, password)
-    //   .catch(error => {
-    //     console.log('error', error);
-    //   })
   }
 
   render() {
