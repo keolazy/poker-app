@@ -1,3 +1,4 @@
+// Can run node server. 
 const { createServer } = require('http')
 const express = require('express')
 const compression = require('compression')
@@ -37,3 +38,6 @@ server.listen(PORT, err => {
   if(err) throw err
   console.log("Server started");
 })
+
+// https://www.youtube.com/watch?v=NX3jqtwfzVY
+// Left off at 19:00. Got Stuck with yarn build error
