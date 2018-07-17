@@ -16,6 +16,7 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
+    "uikit": "^3.0.0-rc.9",
     "webpack": "^4.16.0"
   },
   "scripts": {

@@ -3,8 +3,10 @@ import './App.css';
 import logo from './poker-icon.png';
 import Lander from './components/Lander'
 import CalendarComponent from './components/CalendarComponent';
+import Navigation from './components/Navigation';
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import {BrowserRouter} from 'react-router-dom';
+
 
 // Implement Navigation Routing. 
 class App extends React.Component {
@@ -15,9 +17,7 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Poker-App</h1>
         </header>
-        <div className="tempBox">
-          <h6>Home - Login - Signup - Locations - Contact Us</h6>
-        </div>
+      <Navigation />
         <div className="App-lander">
           <Lander />
         </div>
