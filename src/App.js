@@ -25,10 +25,10 @@ class App extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-xs-6">
-              <h1>User-Card Profile Component goes here.</h1>
+              <h1>Profile Modal Component</h1>
             </div>
             <div className="col-xs-6">
-              <h1>Other Dashboard Component goes here.</h1>
+              <h1>Activity Component</h1>
             </div>
           </div>
         </div>

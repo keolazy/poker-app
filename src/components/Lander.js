@@ -7,7 +7,7 @@ class Lander extends React.Component {
     return (
       <div className="jumbotron">
         <h1>Lander Component</h1>
-        <img href={landerImage} alt="landerPicture" />
+        <img src={landerImage} alt="landerPicture" />
       </div>
     )
   }
