@@ -12,7 +12,7 @@ Freelance Client wanted a poker scheduling application that wasn't third-party a
 
 
 
--Admin should be able to CRUD new events onto the Calendar.
+-Admin should be able to create, read, update, and delete new events onto the Calendar.
 
 -Admin should be able to update General-Info Component for Users to see present status of Club.
 
