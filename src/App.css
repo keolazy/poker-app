@@ -23,15 +23,23 @@
   font-size: large;
 }
 
-.tempBox {
-  border: #222;
-  border-style: solid;
-}
-
 .jumbotron {
   height: 75vh;
   color: white;
   background-color: white;
+}
+/* The following 2 allow image to auto fill div  */
+.App-lander {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.App-lander-image {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height:100%;
 }
 
 .App-Signup {

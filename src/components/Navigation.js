@@ -10,7 +10,7 @@ class Navigation extends React.Component {
                   <div className="uk-navbar-left">
                       <ul className="uk-navbar-nav" color="red">
                           <li className="uk-active"><a href="/">Home.</a></li>
-                          <li color="#2d2d2d"><a href="/signup">Signup.</a></li>
+                          {/* <li color="#2d2d2d"><a href="/signup">Signup.</a></li> */}
                           <li color="#2d2d2d"><a href="/login">Login.</a></li>
                           <li color="#2d2d2d"><a href="/contact">Contact.</a></li>
                           <li color="#2d2d2d"><a href="/dashboard">Dashboard.</a></li>

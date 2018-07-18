@@ -6,21 +6,31 @@ import CalendarComponent from './components/CalendarComponent';
 import Navigation from './components/Navigation';
 import UserSignup from './components/UserSignup';
 import UserLogin from './components/UserLogin';
+import Slider from './components/Slider';
 import "react-big-calendar/lib/css/react-big-calendar.css";
 // import {BrowserRouter} from 'react-router-dom';
 
-
-// Implement Navigation Routing. 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { date: new Date() };
+  }
   render() {
     return (
       <div className="App">
         <header className="App-header">
-        <Navigation />
+          <Navigation />
         </header>
-        <Lander />
+        
+          <Lander>
+            <Navigation />
+          </Lander>
+        
         <div className="App-signup">
           <UserSignup />
+        </div>
+        <div>
+          <Slider />
         </div>
         <div className="App-footer">
           
