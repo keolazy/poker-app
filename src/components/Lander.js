@@ -1,12 +1,14 @@
 import React from "react"
-// import landerImage from "../src/lander.png";
+// Storing images in SRC allows you to access them like components.
+import landerImage from "/Users/keolazy/Desktop/poker-app/src/24hours.jpg"
+
+console.log(landerImage);
 
 class Lander extends React.Component {
   render() {
-    let landerImage = "/Users/keolazy/Desktop/poker-app/src/24hours.jpg"
+    // let landerImage;
     return (
       <div className="jumbotron">
-        <h1>Lander Component</h1>
         <img src={landerImage} alt="landerPicture" />
       </div>
     )

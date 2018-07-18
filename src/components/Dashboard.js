@@ -10,6 +10,7 @@ class Dashboard extends React.Component {
         <Lander />
         <CalendarComponent />
         <div className="container">
+          <Lander />
           <div className="row">
             <div className="col-xs-6">
               <h1>Profile Modal Component</h1>

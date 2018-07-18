@@ -5,6 +5,7 @@ import Lander from './components/Lander'
 import CalendarComponent from './components/CalendarComponent';
 import Navigation from './components/Navigation';
 import UserSignup from './components/UserSignup';
+import UserLogin from './components/UserLogin';
 import "react-big-calendar/lib/css/react-big-calendar.css";
 // import {BrowserRouter} from 'react-router-dom';
 
@@ -15,14 +16,15 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Poker-App</h1>
-        </header>
         <Navigation />
-        <div className="App-lander">
-          <Lander />
+        </header>
+        <Lander />
+        <div className="App-signup">
+          <UserSignup />
         </div>
-        <UserSignup />
+        <div className="App-footer">
+          
+        </div>
     </div>
     );
   }

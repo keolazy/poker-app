@@ -1,8 +1,12 @@
+// https://www.youtube.com/watch?v=tIajENrOJ0o
+// Inspired this Login Form.
 import React from "react";
 import TextFieldGroup from '../common/TextFieldGroup';
-import validateInput from '../../../server/shared/validations/login.js'
+import validateInput from '../../../server/shared/validations/login'
+import React, { connect } from 'react-redux';
+import React, { login } from '../../actions/login';
 
-class UserLogin extends React.Component {
+class LoginForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -12,32 +16,38 @@ class UserLogin extends React.Component {
       isLoading: false,
     }
 
+    this.onSubmit = this.onSubmit.bind(this);
+    this.onChange = this.onChange.bind(this);
+
     isValid() {
-      const {errors, isValid } = validateInput(this.state);
+      const { errors, isValid } = validateInput(this.state);
       if(!isValid) {
-        this.setState( {errors });
+        this.setState( { errors });
       }
       return isValid;
     }
 
-    this.onSubmit(e) {
+    onSubmit(e) {
       e.preventDefault();
-      if(this.isValid() {
-
-      })
+      if (this.isValid()) {
+        this.setState( { errors: {}, isLoading: true });
+        this.props.login(this.state).then(
+          (res) => this.context.router.push('/'),
+          (err) => this.setState( { errors: err.data.errors, isLoading: false })
+        )
+      }
     }
 
-    this.onChange(e) {
+    onChange(e) {
       this.setState( { [e.target.name] : e.target.value})
     }
 
-    this.onSubmit = this.onSubmit.bind(this);
-    this.onChange = this.onChange.bind(this);
   }
   render() {
+    // deconstruct variables from state.
     const { errors, identifier, password, isLoading } = this.state;
     return (
-      <form>
+      <form onSubmit={this.onSubmit}>
         <h1>Login</h1>
         <TextFieldGroup
           field="identifier"
@@ -56,10 +66,18 @@ class UserLogin extends React.Component {
           type="password"
         />
       <div className="form-group"><button className="btn btn-primary btn-lg" disabled={isLoading}>Login</button></div> 
+      </form>
     )
   }
 }
 
+LoginForm.propTypes = {
+  login: React.PropTypes.func.isRequired
+}
 
+LoginForm.contextTypes = {
+  router: React.PropTypes.object.isRequired
+}
 
-export default UserLogin;
+// connecting LoginForm with redux
+export default connect(null, { login }) (LoginForm);

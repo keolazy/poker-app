@@ -8,8 +8,8 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 180px;
+  background-color: #white;
+  height: 70px;
   padding: 20px;
   color: white;
 }
@@ -30,16 +30,17 @@
 
 .jumbotron {
   height: 75vh;
+  color: white;
+  background-color: white;
 }
 
-/* .App-lander {
-  background-color: rgb(170, 167, 167);
-  height: 180px;
-  padding: 20px;
-  color: white;
-  border: #222;
-  border-style: solid;
-} */
+.App-Signup {
+  
+}
+
+.App-footer {
+
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
