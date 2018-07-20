@@ -1,16 +1,15 @@
-import React from 'react'
-import "react-big-calendar/lib/css/react-big-calendar.css";
-import CalendarComponent from './components/CalendarComponent';
-
+import React from "react";
+// import "react-big-calendar/lib/css/react-big-calendar.css";
+// import CalendarComponent from "./components/CalendarComponent";
+// import Lander from "./components/Lander";
 
 class Dashboard extends React.Component {
   render() {
     return (
       <div>
-        <Lander />
-        <CalendarComponent />
+        {/* <Lander /> */}
+        {/* <CalendarComponent /> */}
         <div className="container">
-          <Lander />
           <div className="row">
             <div className="col-xs-6">
               <h1>Profile Modal Component</h1>
@@ -20,14 +19,14 @@ class Dashboard extends React.Component {
             </div>
           </div>
           <div className="row">
-            <div className='custom-footer'>
+            <div className="custom-footer">
               <h6>Insert Footer Component</h6>
             </div>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-exports default Dashboard;
+export default Dashboard;
