@@ -1,3 +1,28 @@
+/* React Router Dom */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul {
+  background-color: #222;
+  margin: 0;
+}
+
+.menu li {
+  font-family: sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
 .App {
   text-align: center;
 }
@@ -47,8 +72,7 @@
 
 .App-lander-image-text {
 }
-
-.App-Signup {
+*/ .App-Signup {
   justify-content: center;
   align-items: center;
   height: 300px;
@@ -70,8 +94,7 @@
 .log {
   margin: 5px 10px 0 0;
 }
-
-@keyframes App-logo-spin {
+*/ @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }

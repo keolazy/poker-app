@@ -2,26 +2,31 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import fire from "./config/Fire";
 import registerServiceWorker from "./registerServiceWorker";
-import { Router, Route } from "react-router";
-// import UserSignup from "./components/UserSignup";
-// import Home from "./components/Home";
-// import UserLogin from "./components/UserLogin";
-// import Dashboard from "./components/Dashboard";
-// import Contact from "./components/Contact";
+// import { Router, Route } from "react-router";
+// import { BrowserRouter } from "react-router-dom";
 
-// const Root = () => {
-//   return (
-//     <div className="container">
-//       <Router>
-//         <Route path="/" component={App} />
-//         <Route path="/login" component={UserLogin} />
-//         <Route path="/contact" component={Contact} />
-//         <Route path="/dashboard" component={Dashboard} />
-//       </Router>
-//     </div>
-//   );
-// };
+// ReactDOM.render(
+//   <BrowserRouter>
+//     <App />
+//   </BrowserRouter>,
+//   document.getElementById("root")
+// );
+// registerServiceWorker();
 
-ReactDOM.render(<App />, document.getElementById("root"));
+let state = {};
+window.setState = changes => {
+  state = Object.assign({}, state, changes);
+
+  ReactDOM.render(<App {...state} />, document.getElementById("root"));
+};
+
+/* eslint no-restricted-globals: 0 */
+let userObject = fire;
+
+let initialState = { ...userObject };
+
+window.setState(initialState);
+
 registerServiceWorker();

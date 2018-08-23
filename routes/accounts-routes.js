@@ -1,4 +1,3 @@
-// 
 const express = require('express')
 // const parseurl = require('parseurl');
 const bodyParser = requrie('body-parser');
@@ -8,10 +7,8 @@ const knex = require('knex');
 const db = require('../db/knex')
 const app = express();
 
-
 const router = express.Router()
 
-const app = express();
 
 // Root Directory
 router.get('/', async (req, res, next) => {
