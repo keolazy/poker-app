@@ -122,6 +122,16 @@ class Login2 extends Component {
                     LOG IN
                   </button>
                 </div>
+
+                <div class="uk-margin">
+                  <button
+                    type="submit"
+                    onClick={this.signup}
+                    class="uk-button uk-button-secondary uk-button-secondary uk-button-large uk-width-1-1"
+                  >
+                    SIGNUP
+                  </button>
+                </div>
               </fieldset>
             </form>
             <div>
